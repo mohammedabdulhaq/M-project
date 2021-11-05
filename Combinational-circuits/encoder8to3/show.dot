@@ -1,0 +1,23 @@
+digraph "encoder8to3" {
+label="encoder8to3";
+rankdir="LR";
+remincross=true;
+n4 [ shape=octagon, label="a", color="black", fontcolor="black" ];
+n5 [ shape=octagon, label="y", color="black", fontcolor="black" ];
+x1 [ shape=record, style=rounded, label="<s0> 0:0 - 1:1 " ];
+x2 [ shape=record, style=rounded, label="<s0> 0:0 - 0:0 " ];
+x3 [ shape=record, style=rounded, label="<s0> 0:0 - 2:2 " ];
+p0 [shape=box, style=rounded, label="PROC $1\nencoder.v:4"];
+n2 [ shape=point ];
+p0:e -> n2:w [color="black", style="setlinewidth(3)", label=""];
+x1:s0:e -> n2:w [color="black", style="setlinewidth(3)", label=""];
+x2:s0:e -> n2:w [color="black", style="setlinewidth(3)", label=""];
+x3:s0:e -> n2:w [color="black", style="setlinewidth(3)", label=""];
+n2:e -> p0:w [color="black", style="setlinewidth(3)", label=""];
+p0:e -> n4:w [color="black", style="setlinewidth(3)", label=""];
+n4:e -> p0:w [color="black", style="setlinewidth(3)", label=""];
+n5:e -> p0:w [color="black", style="setlinewidth(3)", label=""];
+p0:e -> x1:w [color="black", label=""];
+p0:e -> x2:w [color="black", label=""];
+p0:e -> x3:w [color="black", label=""];
+}

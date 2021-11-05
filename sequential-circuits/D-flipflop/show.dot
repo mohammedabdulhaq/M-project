@@ -1,0 +1,28 @@
+digraph "dff" {
+label="dff";
+rankdir="LR";
+remincross=true;
+n7 [ shape=octagon, label="D", color="black", fontcolor="black" ];
+n8 [ shape=octagon, label="Q", color="black", fontcolor="black" ];
+n9 [ shape=octagon, label="Qb", color="black", fontcolor="black" ];
+n10 [ shape=octagon, label="clk", color="black", fontcolor="black" ];
+n11 [ shape=octagon, label="rstn", color="black", fontcolor="black" ];
+c14 [ shape=record, label="{{<p12> A}|$55\nsky130_fd_sc_hd__clkinv_1|{<p13> Y}}" ];
+c15 [ shape=record, label="{{<p12> A}|$56\nsky130_fd_sc_hd__clkinv_1|{<p13> Y}}" ];
+c18 [ shape=record, label="{{<p16> CLK|<p7> D|<p17> RESET_B}|$48\nsky130_fd_sc_hd__dfrtp_1|{<p8> Q}}" ];
+x0 [shape=box, style=rounded, label="BUF"];
+x1 [shape=box, style=rounded, label="BUF"];
+x2 [shape=box, style=rounded, label="BUF"];
+x3 [shape=box, style=rounded, label="BUF"];
+n10:e -> c18:p16:w [color="black", label=""];
+n11:e -> x0:w:w [color="black", label=""];
+x0:e:e -> c14:p12:w [color="black", label=""];
+x2:e:e -> c15:p12:w [color="black", label=""];
+c14:p13:e -> x1:w:w [color="black", label=""];
+c15:p13:e -> x3:w:w [color="black", label=""];
+x1:e:e -> c18:p17:w [color="black", label=""];
+n7:e -> c18:p7:w [color="black", label=""];
+c18:p8:e -> n8:w [color="black", label=""];
+n8:e -> x2:w:w [color="black", label=""];
+x3:e:e -> n9:w [color="black", label=""];
+}
