@@ -65,7 +65,9 @@ Now open a new terminal as shown
 
 In terminal type the following commands 
 
-1. **iverilog modulename testbenchname** in my case => iverilog encoder.v tb.v
+> iverilog modulename testbenchname 
+
+in my case => iverilog encoder.v tb.v
 ![10](https://user-images.githubusercontent.com/48184231/139594344-aa18f396-fc46-46fb-b4c4-20888a5c57d4.png)
 
 
@@ -75,7 +77,8 @@ after this a new file "a.out" is generated use following command
 
 **Step-6**
 
-2.**vvp a.out**
+> vvp a.out
+
 ![12](https://user-images.githubusercontent.com/48184231/139594352-c41da818-2c6f-450f-9f2a-bdcf8c61d678.png)
 
 you will be able to see resut in terminal as well as a new file with .vcd extention which is further use for generating waveforms![13](https://user-images.githubusercontent.com/48184231/139594359-9b6ee381-8244-4a14-a40f-32fcc96c345a.png)
@@ -85,7 +88,9 @@ you will be able to see resut in terminal as well as a new file with .vcd extent
 
 for generating waveforms we are using gtkwave EDA Tool for waveform representation. use the following command for opening .vcd file in gtkwave
 
-3.**gtkwave modulename.vcd** in my case => gtkwave encoder8to3.vcd
+> gtkwave modulename.vcd
+
+in my case => gtkwave encoder8to3.vcd
 ![14](https://user-images.githubusercontent.com/48184231/139594369-13593648-5748-44a7-ab84-50a4e36cec9e.png)
 
 the following window pop's up click the testbench as shown and append ports.after that click zoom fit butten to observe all changing waveforms in a single window use mouse and click on the various points on waves to observe the values on left signals window.
