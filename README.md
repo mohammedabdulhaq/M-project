@@ -3,7 +3,7 @@
 
 This Repository is all about my B.E. final year Project.
 
-This Repository created on date:30-10-2021.
+This Repository is created on date:30-10-2021.
 
 >let me introduce myself. I am **Mohammed Abdul Haq** studying at Muffakham Jah College of Engineering and Technology in the field of Electronics and Communication Engineering. My Skills are Verilog, Iverilog, Gtkwave, yosys, C, C++, Python, HTML, CSS, Javascript.  
 
